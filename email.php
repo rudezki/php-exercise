@@ -5,6 +5,6 @@ $sposti = $_POST["sposti"];
 $kiitos = "kiitos.html";
 $palaute = "palaute.html";
 $kysely = $nimi . " , " . $sposti . " , Palaute:" . $palaute;
-   mail($to,"Kyselyn palautus",$kysely);
+   mail($to, "Kyselyn palautus", $kysely);
    header("Location: $kiitos");
 ?>
